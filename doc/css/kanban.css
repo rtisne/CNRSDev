@@ -1,0 +1,24 @@
+
+div#titre {
+    width: 260px;
+    font-weight: bold;
+    font-size:38px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#colonne1 {
+    float: left;
+    width: 500px;
+    background: lightblue;
+}
+div#colonne2 {
+    float: right;
+    width: 500px;
+    background: burlywood;
+}
+div#centre {
+    margin-left: 170px;
+    margin-right: 310px;
+    background: khaki;
+}
