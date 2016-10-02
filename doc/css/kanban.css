@@ -2,23 +2,46 @@
 div#titre {
     width: 260px;
     font-weight: bold;
-    font-size:38px;
+    font-size:30px;
     margin-left: auto;
     margin-right: auto;
 }
 
-div#colonne1 {
-    float: left;
-    width: 500px;
+#colonne1 {
+    width: 33%;
     background: lightblue;
+    padding-right: 10px;
 }
-div#colonne2 {
-    float: right;
-    width: 500px;
-    background: burlywood;
-}
-div#centre {
-    margin-left: 170px;
-    margin-right: 310px;
+#colonne2 {
+    width: 33%;
     background: khaki;
+    padding-right: 10px;
+    padding-left: 10px;
 }
+#colonne3 {
+    width: 34%;
+    background: burlywood;
+    padding-left: 10px;
+}
+
+li#devL {
+   color: #990099;
+   background: white;
+}
+
+li#devC {
+   color: red;
+   background: white;
+}
+
+li#devR {
+   color: #0066ff;
+   background: white;
+}
+
+li{
+   margin-bottom: 5px;
+   list-style-type: none;
+}
+
+
