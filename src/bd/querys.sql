@@ -1,15 +1,14 @@
 SELECT id, titre FROM ateliers 
 ORDER BY id DESC;
 
-SELECT a.*, l.nom as nom_laboratoire
-FROM ateliers a, laboratoires l
-WHERE a.id_laboratoire = l.id AND a.id = $id;
+SELECT a.*
+FROM ateliers a
+WHERE a.id = $id;
 
 INSERT INTO ateliers(
 	titre,
 	theme,
 	type,
-	id_laboratoire,
 	lieu,
 	duree,
 	capacite,
@@ -24,20 +23,18 @@ INSERT INTO ateliers(
 	$5,
 	$6,
 	$7,
-	$8,
-	$9		
+	$8		
 );
 
 UPDATE ateliers
 SET titre = $1,
 	theme = $2,
 	type = $3,
-	id_laboratoire = $4,
-	lieu = $5,
-	duree = $6,
-	capacite = $7,
-	resume = $8,
-	animateur = $9
+	lieu = $4,
+	duree = $5,
+	capacite = $6,
+	resume = $7,
+	animateur = $8
 WHERE id = $id;
 
 DELETE FROM ateliers_disciplines
