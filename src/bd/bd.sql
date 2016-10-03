@@ -19,7 +19,7 @@ CREATE TABLE ateliers (
 	etat ENUM('ACT', 'DES') NOT NULL DEFAULT 'ACT',
 	theme TEXT NOT NULL,
 	type VARCHAR(100) NOT NULL,
-	id_laboratoire INT NOT NULL,
+	id_laboratoire INT,
 	lieu TEXT NOT NULL,
 	duree INT NOT NULL,
 	capacite INT NOT NULL,
