@@ -49,11 +49,11 @@ echo $donnees["resume"] ;
 echo '</td>';
 
 echo '<td>';
-echo '<input type="submit" value="Modifier" target="updateAtelier.php">';
+echo '<a href="updateAtelier.php?postId='.$donnees["id"].'">Modifier</a>';
 echo '</td>';
 
 echo '<td>';
-echo '<input type="submit" value="Supprimer" href="">';
+echo '<a href="deleteAtelier.php?postId='.$donnees["id"].'">Supprimer</a>';
 echo '</td>';
 
 echo '</tr>';
