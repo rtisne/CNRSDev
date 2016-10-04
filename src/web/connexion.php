@@ -3,12 +3,14 @@
 // $mdp = '';   /*Votre mots de passe*/
 // $server = 'dbserver'; /*le nom de la base au cremi c'est celui là */
 include "env.php";
-$connection = mysql_connect($HOST_BD , $USER_BD , $PASSWORD_BD);
-if ($connection == false) {
-  echo "DEBUG".$connection."<BR>";
-	exit;
+try
+{
+    $db = new PDO('mysql:host='.$DB_HOST.';dbname='.$DB_NAME.';charset=utf8', $DB_USER, $DB_PASSWORD);
 }
-else
-   echo "CONNECTED !!!";
+catch(Exception $e)
+{
+    die('Erreur : '.$e->getMessage());
+}
+
 
 ?>

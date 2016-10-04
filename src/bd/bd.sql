@@ -1,19 +1,19 @@
 CREATE DATABASE bd_cnrs;
 
-CREATE TABLE laboratoires (
+CREATE TABLE bd_cnrs.laboratoires (
 	id INT NOT NULL AUTO_INCREMENT,
 	nom VARCHAR(100) NOT NULL,
 	PRIMARY KEY (id)
 );
 
-CREATE TABLE disciplines (
+CREATE TABLE bd_cnrs.disciplines (
 	id INT NOT NULL AUTO_INCREMENT,
 	nom VARCHAR(50) NOT NULL,
 	description VARCHAR(200),
 	PRIMARY KEY (id)
 );
 
-CREATE TABLE ateliers (
+CREATE TABLE bd_cnrs.ateliers (
 	id INT NOT NULL AUTO_INCREMENT,
 	titre VARCHAR(100) NOT NULL,
 	etat ENUM('ACT', 'DES') NOT NULL DEFAULT 'ACT',
@@ -27,7 +27,7 @@ CREATE TABLE ateliers (
 	animateur VARCHAR(200) NOT NULL,
 	public_primaire ENUM('OUI', 'NON') NOT NULL DEFAULT 'NON',
 	public_6_5 ENUM('OUI', 'NON') NOT NULL DEFAULT 'NON',
-	public_4_3 ENUM('OUI', 'NON') NOT NULL DEFAULT 'NON',	
+	public_4_3 ENUM('OUI', 'NON') NOT NULL DEFAULT 'NON',
 	public_2 ENUM('OUI', 'NON') NOT NULL DEFAULT 'NON',
 	public_1 ENUM('OUI', 'NON') NOT NULL DEFAULT 'NON',
 	public_tale ENUM('OUI', 'NON') NOT NULL DEFAULT 'NON',
@@ -37,7 +37,7 @@ CREATE TABLE ateliers (
 	FOREIGN KEY (id_laboratoire) REFERENCES laboratoires (id)
 );
 
-CREATE TABLE ateliers_disciplines (
+CREATE TABLE bd_cnrs.ateliers_disciplines (
 	id INT NOT NULL AUTO_INCREMENT,
 	id_atel INT NOT NULL,
 	id_disc INT NOT NULL,
@@ -46,4 +46,3 @@ CREATE TABLE ateliers_disciplines (
 	FOREIGN KEY (id_atel) REFERENCES ateliers (id),
 	FOREIGN KEY (id_disc) REFERENCES disciplines (id)
 );
-

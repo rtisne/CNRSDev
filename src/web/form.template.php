@@ -1,7 +1,7 @@
 <div class="w-form">
     <form name="form" action="<?= (isset($action)) ? $action : "" ?>" method="post">
         <label for="name">Nom de l'atelier:</label>
-        <input class="w-input"  id="nom" maxlength="256" name="nom" value="<?= (isset($nom)) ? $nom : "" ?>" placeholder="Entrez le nom de l'atelier" required="required" type="text">
+        <input class="w-input"  id="titre" maxlength="256" name="titre" value="<?= (isset($titre)) ? $titre : "" ?>" placeholder="Entrez le nom de l'atelier" required="required" type="text">
         <label for="name">Thème de l'atelier:</label>
         <input class="w-input"  id="theme" maxlength="256" name="theme" value="<?= (isset($theme)) ? $theme : "" ?>" placeholder="Entrez le theme de l'atelier" required="required" type="text">
         <label for="name">Type de l'atelier:</label>
@@ -15,7 +15,8 @@
         <label for="name">Animateurs de l'atelier:</label>
         <input class="w-input"  id="type" maxlength="500" name="animateur" value="<?= (isset($animateur)) ? $animateur : "" ?>" placeholder="Entrez les animateurs de l'atelier" required="required" type="text">
         <label for="description">Description de l'atelier:</label>
-        <textarea class="w-input" id="resume" name="description" placeholder="Entrez la description de l'atelier"><?= (isset($resume)) ? $resume : "" ?></textarea>
+        <textarea class="w-input" id="resume" name="resume" placeholder="Entrez la description de l'atelier"><?= (isset($resume)) ? $resume : "" ?></textarea>
+        <?= (isset($id))? '<input type="hidden" name="id" value="'.$id.'">':""?>
         <input class="w-button" data-wait="Veuillez patienter..." type="submit" value="Validez">
     </form>
 </div>

@@ -16,8 +16,8 @@
                 <img height="65" src="http://uploads.webflow.com/57f1455a80f54a0b096bd675/57f14cd7839ae31b1f1b575c_logo.png" width="100">
             </a>
             <nav class="w-nav-menu" role="navigation">
-                <a class="w-nav-link" href="#" style="max-width: 940px;">LISTE</a>
-                <a class="w-nav-link" href="#" style="max-width: 940px;">CREER</a>
+                <a class="w-nav-link" href="listAtelier.php" style="max-width: 940px;">LISTE</a>
+                <a class="w-nav-link" href="createAtelier.php" style="max-width: 940px;">CREER</a>
             </nav>
         </div>
     </div>
