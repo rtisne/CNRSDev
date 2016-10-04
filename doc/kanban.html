@@ -1,65 +1,66 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>KanBan Projet CNRS</title>
-  <link rel="stylesheet" href="css/kanban.css">
-  <script src="script.js"></script>
+    <meta charset="utf-8">
+    <title>KanBan Projet CNRS</title>
+    <link rel="stylesheet" href="css/kanban.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
-<div id="titre">KanBan</div><br>
-<ul id="dev">
-    <li id="devL">Liliana
-    <li id="devC">Chaidou
-    <li id="devR">Romain
-</ul>
-<table>
-    <tr>
-        <th id="colonne1">TO-DO</th>
-	<th id="colonne2">On Going</th>
-	<th id="colonne3">Done</th>
-    </tr>
-    <tr>
-	<td id="colonne1">
-	    <ul>
-		<li id="devC">Tâche 4 : <br>
-		    Création de la page "CréationAtelier.php" qui propose un formulaire pour créer un atelier.
-		    </li>
-		<li id="devL">Tâche 6 : <br>
-		    Création d'une page "DeleteAtelier.php" qui lance une requête pour faire la suppression d'un atelier. Redirige 			    l'utilisateur sur la Tâche 3.
-		    </li>
-		<li id="devL">Tâche 8 : <br>
-		Faire les tests fonctionnels sur la mise en place du site.
-		</li>
-   	    </ul>
-	</td>
-	<td id="colonne2">
-	    <ul>
-		    <li id="devC">Tâche 3 : <br>
-		    Création de la page "listAtelier.php" pour lister les atelier avec 2 bouton "modifier" et "supprimer".
-		    </li>
-	    </ul>
-	</td>
-	<td id="colonne3">
-	    <ul>
-		<li id="devL">Tâche 1 : <br> Écrire et exécuter les scripts sql permettant de mettre en place les tables
-		    dans la base de données: Une table “Atelier” permettant de stocker les informations sur les ateliers
-		    </li>
-	    	<li id="devR">Tâche 2 : <br>
-		    Création de templates html (structures de base) contenant: <br>
-		    -Un header <br>
-	  	    -un footer <br>
-		    -un template
-		    </li>
-		<li id="devL">Tâche 7 : <br>
-		    Mettre en place les requêtes SQL.
-		    </li>
-        <li id="devR">Tâche 5 : <br>
-            Création d'une page "UpdateAtelier.php" qui affiche un formulaire en définissant les champs à pré-remplir.
-        </li>
-	    </ul>
-	</td>
-    </tr>
-</table>
+    <div id="titre">KanBan</div><br>
+    <ul id="dev">
+        <li id="devL">Liliana</li>
+        <li id="devC">Chaidou</li>
+        <li id="devR">Romain</li>
+    </ul>
+    <table>
+        <tr>
+            <th id="colonne1">TO-DO</th>
+            <th id="colonne2">On Going</th>
+            <th id="colonne3">Done</th>
+        </tr>
+        <tr>
+            <td id="colonne1">
+                <ul>
+                    <li id="devC">Tâche 4 : <br>
+                        Création de la page "createAtelier.php" qui propose un formulaire pour créer un atelier.
+                    </li>
+                    <li id="devL">Tâche 6 : <br>
+                        Création d'une page "deleteAtelier.php" qui lance une requête pour faire la suppression d'un atelier. Redirige 			    l'utilisateur sur la Tâche 3.
+                    </li>
+                    <li id="devL">Tâche 8 : <br>
+                        Faire les tests fonctionnels sur la mise en place du site.
+                    </li>
+                </ul>
+            </td>
+            <td id="colonne2">
+                <ul>
+                    <li id="devC">Tâche 3 : <br>
+                        Création de la page "listAtelier.php" pour lister les atelier avec 2 bouton "modifier" et "supprimer".
+                    </li>
+                </ul>
+            </td>
+            <td id="colonne3">
+                <ul>
+                    <li id="devL">Tâche 1 : <br> Écrire et exécuter les scripts sql permettant de mettre en place les tables
+                        dans la base de données: Une table “Atelier” permettant de stocker les informations sur les ateliers
+                    </li>
+                    <li id="devR">Tâche 2 : <br>
+                        Création de templates html (structures de base) contenant: <br>
+                        -Un header <br>
+                        -un footer <br>
+                        -un template
+                    </li>
+                    <li id="devL">Tâche 7 : <br>
+                        Mettre en place les requêtes SQL.
+                    </li>
+                    <li id="devR">Tâche 5 : <br>
+                        Création d'une page "updateAtelier.php" qui affiche un formulaire en définissant les champs à pré-remplir.
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
