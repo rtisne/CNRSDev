@@ -5,6 +5,7 @@ include("footer.template.php");
 include("connexion.php");
 
 
+echo '<center><FONT size="15pt"><B>Listes des Ateliers</B></FONT></center><br><br>';
 $reponse=$db->query("SELECT id, titre , etat , theme , type , lieu , duree , capacite , resume FROM ateliers ORDER BY id ASC");
 $Nbrligne = 0;
 
