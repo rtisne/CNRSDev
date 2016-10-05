@@ -13,5 +13,7 @@ if(isset($_GET['id'])){
 		print("Aucun atelier à supprimer.\n");
 		header('Location: listAtelier.php');
 	}
+} else {
+	header('Location: listAtelier.php');
 }
 ?>
