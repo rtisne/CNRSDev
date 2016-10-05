@@ -50,11 +50,11 @@ echo $donnees["resume"] ;
 echo '</td>';
 
 echo '<td>';
-echo '<a href="updateAtelier.php?postId='.$donnees["id"].'">Modifier</a>';
+echo '<a href="updateAtelier.php?id='.$donnees["id"].'">Modifier</a>';
 echo '</td>';
 
 echo '<td>';
-echo '<a href="deleteAtelier.php?postId='.$donnees["id"].'">Supprimer</a>';
+echo '<a href="deleteAtelier.php?id='.$donnees["id"].'">Supprimer</a>';
 echo '</td>';
 
 echo '</tr>';

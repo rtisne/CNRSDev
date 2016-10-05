@@ -1,7 +1,7 @@
 <?php
 include_once "connexion.php";
 
-if(isset($_GET['postId'])) {
+if(isset($_GET['id'])) {
     $req = $db->prepare('SELECT a.* FROM ateliers a WHERE a.id = ?');
     $req->execute(array($_GET['postId']));
     $donnees = $req->fetch();

@@ -1,9 +1,9 @@
 <?php
 include_once "connexion.php";
 
-if(isset($_GET['postId'])){
+if(isset($_GET['id'])){
 
-	$id_atelier = $_GET['postId'];
+	$id_atelier = $_GET['id'];
 
     $count = $db->exec('DELETE FROM ateliers WHERE id = '.$id_atelier);
 
